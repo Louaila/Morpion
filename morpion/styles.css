@@ -1,0 +1,43 @@
+ body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+.game {
+    display: inline-block;
+    margin: 20px;
+}
+
+.row {
+    display: flex;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Style pour les cellules non jouées */
+.cell[data-cell] {
+    background: #f2f2f2;
+}
+
+/* Style pour les cellules jouées par X */
+.cell[data-cell="X"] {
+    color: #FF5733;
+}
+
+/* Style pour les cellules jouées par O */
+.cell[data-cell="O"] {
+    color: #337DFF;
+}
